@@ -4,17 +4,30 @@
   --void-color: #111;
 }
 
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   background-color: var(--void-color);
+
+  margin-top: 43px;
+  height: 100%;
+  aspect-ratio: 1 / 1.5;
+  gap: 1.01%;
 }
 
 svg {
-  height: 100vh;
-  width: 100vw;
+  position: relative;
+  aspect-ratio: 1;
 
   fill: var(--body-color);
   stroke: var(--body-color);
@@ -24,3 +37,14 @@ svg {
   fill: none;
   stroke: var(--ring-color);
 }
+
+/* region planets */
+#mercury { width: 2.75% }
+#venus   { width: 11.07%}
+#earth   { width: 12.46%}
+#mars    { width: 5.54% }
+#jupiter { width: 33.65%}
+#saturn  { width: 34.85%}
+#uranus  { width: 15.33%}
+#neptune { width: 15.25%}
+/* endregion planets */

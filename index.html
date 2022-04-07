@@ -15,25 +15,37 @@
 
 <body>
 
-<svg viewBox="0 0 1000 1000">
-  <circle r="10" cx="500" cy="-10" id="mercury"></circle>
-  <circle r="40" cx="500" cy="50" id="venus"></circle>
-  <circle r="45" cx="500" cy="147" id="earth"></circle>
-  <circle r="20" cx="500" cy="223" id="mars"></circle>
-  <g id="jupiter">
-    <circle r="110" cx="500" cy="375"></circle>
-    <circle r="120" cx="500" cy="375" class="rings" stroke-width="3"></circle>
-  </g>
-  <g id="saturn">
-    <circle r="70" cx="500" cy="634"></circle>
-    <circle r="100" cx="500" cy="634" class="rings" stroke-width="50"></circle>
-  </g>
-  <g id="uranus">
-    <circle r="50" cx="500" cy="826"></circle>
-    <path class="rings" d="M 500 771 v 110" stroke-width="2"></path>
-  </g>
-  <circle r="55" cx="500" cy="947" id="neptune"></circle>
+<svg style="display:none">
+  <defs>
+    <symbol id="genericPlanetSymbol" viewBox="0 0 1000 1000">
+      <circle r="500" cx="500" cy="500" />
+    </symbol>
+
+    <symbol id="jupiterSymbol" viewBox="0 0 1000 1000">
+      <circle r="450" cx="500" cy="500" />
+      <circle r="493" cx="500" cy="500" class="rings" stroke-width="14" />
+    </symbol>
+
+    <symbol id="saturnSymbol" viewBox="0 0 1000 1000">
+      <circle r="280" cx="500" cy="500" />
+      <circle r="400" cx="500" cy="500" class="rings" stroke-width="198" />
+    </symbol>
+
+    <symbol id="uranusSymbol" viewBox="0 0 1000 1000">
+      <circle r="450" cx="500" cy="500" />
+      <path class="rings" d="M 500 0 v 1000" stroke-width="20" />
+    </symbol>
+  </defs>
 </svg>
+
+<svg id="mercury"><use href="#genericPlanetSymbol" /></svg>
+<svg id="venus"><use href="#genericPlanetSymbol" /></svg>
+<svg id="earth"><use href="#genericPlanetSymbol" /></svg>
+<svg id="mars"><use href="#genericPlanetSymbol" /></svg>
+<svg id="jupiter"><use href="#jupiterSymbol" /></svg>
+<svg id="saturn"><use href="#saturnSymbol" /></svg>
+<svg id="uranus"><use href="#uranusSymbol" /></svg>
+<svg id="neptune"><use href="#genericPlanetSymbol" /></svg>
 
 </body>
 
