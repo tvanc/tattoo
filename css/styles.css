@@ -4,23 +4,26 @@
   --void-color: #111;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   overflow: hidden;
-  padding: 0;
+  padding: 5vh 0;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: var(--void-color);
-
-  margin-top: 43px;
   height: 100%;
+
   aspect-ratio: 1 / 1.5;
   gap: 1.01%;
 }
