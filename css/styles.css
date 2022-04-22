@@ -4,6 +4,12 @@
   --void-color: #080808;
 }
 
+@media print {
+  :root {
+    --void-color: white;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
