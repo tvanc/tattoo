@@ -47,8 +47,10 @@ svg {
   stroke: var(--ring-color);
 }
 
-#earth {
-  fill: hsl(210, 43%, 15%);
+@media (orientation: portrait) {
+  #earth {
+    fill: hsl(210, 43%, 15%);
+  }
 }
 
 #tnos {
