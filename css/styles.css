@@ -48,7 +48,7 @@ svg {
 }
 
 #earth {
-  fill: hsl(210, 33%, 12%); /* my blue: hsl(210, 43%, 12%) */
+  fill: hsl(210, 36%, 12%); /* my blue: hsl(210, 43%, 12%) */
   /*fill: hsl(207, 61%, 12%); !* steel blue: hsl(207, 61%, 71%) *!*/
   /*fill: hsl(229, 19%, 12%); !* cool gray: hsl(229, 19%, 67%) *!*/
 }
