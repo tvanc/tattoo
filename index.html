@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 
-  <meta name="theme-color" content="#1c1c1c">
+  <meta name="theme-color" content="#0a0a0a">
 </head>
 
 <body>
@@ -33,7 +33,11 @@
 
     <symbol id="uranusSymbol" viewBox="0 0 1000 1000">
       <circle r="450" cx="500" cy="500" />
-      <path class="rings" d="M 500 0 v 1000" stroke-width="50" />
+      <path class="rings" d="M 500 0 v 1000" stroke-width="30" />
+    </symbol>
+
+    <symbol id="tnoSymbol" viewBox="0 0 1000 1000">
+      <text x="500" y="500" text-anchor="middle" dominant-baseline="central">*</text>
     </symbol>
   </defs>
 </svg>
@@ -46,6 +50,7 @@
 <svg id="saturn"><use href="#saturnSymbol" /></svg>
 <svg id="uranus"><use href="#uranusSymbol" /></svg>
 <svg id="neptune"><use href="#genericPlanetSymbol" /></svg>
+<svg id="tnos"><use href="#tnoSymbol" /></svg>
 
 </body>
 

@@ -1,7 +1,7 @@
 :root {
-  --body-color: #222;
-  --ring-color: #1c1c1c;
-  --void-color: #111;
+  --surface-color: #1f1f1f;
+  --ring-color: #141414;
+  --void-color: #080808;
 }
 
 * {
@@ -13,7 +13,7 @@ html {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  padding: 5vh 0;
+  padding: 3vh 0;
 }
 
 body {
@@ -32,8 +32,8 @@ svg {
   position: relative;
   aspect-ratio: 1;
 
-  fill: var(--body-color);
-  stroke: var(--body-color);
+  fill: var(--surface-color);
+  stroke: var(--surface-color);
 }
 
 .rings {
@@ -41,7 +41,12 @@ svg {
   stroke: var(--ring-color);
 }
 
-/* region planets */
+#tnos {
+  font: bold 1400px "Verdana";
+  margin-top: 1%;
+}
+
+/* region objects */
 #mercury { width: 2.75% }
 #venus   { width: 11.07%}
 #earth   { width: 12.46%}
@@ -50,4 +55,5 @@ svg {
 #saturn  { width: 34.85%}
 #uranus  { width: 15.33%}
 #neptune { width: 15.25%}
-/* endregion planets */
+#tnos    { width: 2% }
+/* endregion objects */
