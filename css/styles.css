@@ -47,6 +47,10 @@ svg {
   stroke: var(--ring-color);
 }
 
+#earth {
+  fill: hsl(210, 43%, 15%);
+}
+
 #tnos {
   font: bold 1400px "Verdana";
   margin-top: 1%;
